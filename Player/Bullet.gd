@@ -14,7 +14,7 @@ func _physics_process(_delta):
 	position.y = wrapf(position.y, 0, 600)
 
 
-func _on_Area2D_body_entered(body):
+func _on_Area2D_body_entered(_body):
 	queue_free()
 
 

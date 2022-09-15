@@ -24,8 +24,8 @@ func _physics_process(_delta):
 		var Effects = get_node_or_null("/root/Game/Effects")
 		if Effects != null:
 			var bullet = Bullet.instance()
-			bullet.rotation = rotation
 			bullet.global_position = global_position + nose.rotated(rotation)
+			bullet.rotation = rotation
 			Effects.add_child(bullet)
 	
 	

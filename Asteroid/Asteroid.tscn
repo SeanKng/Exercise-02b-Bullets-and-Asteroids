@@ -3,7 +3,7 @@
 [ext_resource path="res://Assets/Asteroid.png" type="Texture" id=1]
 [ext_resource path="res://Asteroid/Asteroid.gd" type="Script" id=2]
 
-[node name="Asteroid" type="Node2D"]
+[node name="Asteroid" type="KinematicBody2D"]
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]

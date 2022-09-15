@@ -32,11 +32,16 @@ polygon = PoolVector2Array( 5, -25.2, 5, -22.5, 28.3, 17, 27.2, 19, 25.9, 19, 17
 [node name="Asteroid_Container" type="Node2D" parent="."]
 
 [node name="Asteroid" parent="Asteroid_Container" instance=ExtResource( 4 )]
+light_mask = 0
 position = Vector2( 100, 100 )
 
 [node name="Asteroid2" parent="Asteroid_Container" instance=ExtResource( 4 )]
+light_mask = 0
 position = Vector2( 800, 800 )
 
 [node name="Effects" type="Node2D" parent="."]
 
 [node name="Bullet" parent="Effects" instance=ExtResource( 5 )]
+physics_interpolation_mode = 1
+collision_layer = 1
+collision_mask = 1
